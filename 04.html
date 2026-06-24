@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .wrap{
+        width: 1200px;
+        margin: 100px auto;
+    }
+
+    .item{
+        margin-bottom: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .item .pic{
+        width: 55%;
+        flex-shrink: 0;
+    }
+
+    .item .pic img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+
+    .item >:first-child{
+        margin-right: -10%;
+    }
+
+    .item .txt{
+        z-index: 1;
+        padding: 50px 30px;           
+    }
+
+    .item:nth-child(1) .txt{
+        background-color: rgba(137, 240, 151, 0.5);
+    }
+
+    .item:nth-child(2) .txt{
+        background-color: rgba(255,210,49,.5);
+    }
+
+    .item:nth-child(3) .txt{
+        background-color: rgba(255, 159, 49, 0.5);
+    }
+
+
+
+
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img src="./images/04.jpg" alt="">
+            </div>    
+            
+            <div class="txt">
+                <h2>圖片一</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, nulla?</p>
+            </div>
+        </div>        
+               
+
+        <div class="item">
+            <div class="txt">
+                <h2>圖片二</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, nulla?</p>
+            </div>
+
+            <div class="pic">
+                <img src="./images/01.jpg" alt="">
+            </div>    
+        </div>
+        
+        <div class="item">
+            <div class="pic">
+                <img src="./images/04.jpg" alt="">
+            </div>    
+            
+            <div class="txt">
+                <h2>圖片三</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, nulla?</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
